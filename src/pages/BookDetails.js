@@ -23,7 +23,7 @@ export default function BookDetails() {
       setIsLoading(true);
       try {
         const res = await fetch(
-          "http://localhost:3005/book/books"
+          "https://bookappbackend-production.up.railway.app/book/books"
         );
         const data = await res.json();
         setBook(data);
