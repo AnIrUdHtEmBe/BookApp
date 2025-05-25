@@ -24,8 +24,8 @@ export function useBooks(query) {
           subjects[Math.floor(Math.random() * subjects.length)];
 
         const url = query
-          ? "http://localhost:3005/book/books"
-          : "http://localhost:3005/book/books";
+          ? "https://bookappbackend-production.up.railway.app/book/books"
+          : "https://bookappbackend-production.up.railway.app/book/books";
 
         const res = await fetch(url);
         console.log(res,"new rizzz");
