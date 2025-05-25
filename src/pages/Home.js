@@ -20,7 +20,7 @@ export default function Home() {
     async function fetchRecommendedBooks() {
       try {
         const res = await fetch(
-          "http://localhost:3005/book/books"
+          "https://bookappbackend-production.up.railway.app/book/books"
         );
         console.log(res);
         
